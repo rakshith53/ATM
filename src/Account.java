@@ -7,4 +7,11 @@ public class Account {
     private String uuid;
     private User holder;
     private ArrayList<Transaction> transactions;
+
+    public Account(String name, User holder, Bank theBank){
+        this.name = name;
+        this.holder = holder;
+
+        this.uuid = theBank.getNewAccountUUID();
+    }
 }
