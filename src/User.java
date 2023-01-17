@@ -26,4 +26,35 @@ public class User {
 
         System.out.printf("New user %s %s with ID %s created.\n", lastName,firstName,this.uuid);
     }
+
+    public void addAccount(Account anAcct){
+        this.accounts.add(anAcct);
+    }
+
+    public String getUUID(){
+        return this.uuid;
+    }
+
+    public boolean validatePin(String aPin) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            return MessageDigest.isEqual(md.digest(aPin.getBytes()), this.pinHash);
+        }
+        catch (NoSuchAlgorithmException e){
+            System.err.println("error, caught NoSuchAlgorithmException");
+            System.exit(1);
+        }
+        return false;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void printAccountsSummary(){
+        System.out.printf("\n\n%s's accounts summary", this.firstName);
+        for(int i=0;i<this.accounts.size();i++){
+            System.out.printf("%d) %s\n", (i+1),this.accounts.get(i).getSummaryLine());
+        }
+    }
 }
