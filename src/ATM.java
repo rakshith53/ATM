@@ -77,4 +77,17 @@ public class ATM {
             ATM.printUserMenu(theUser, sc);
         }
     }
+
+    public static void showTransHistory(User theUser, Scanner sc){
+        int theAcct;
+        do{
+            System.out.printf("Enter the number (1-%d) of the account whose transaction you wat to see: ",theUser.numAccounts());
+            theAcct = sc.nextInt()-1;
+            if (theAcct < 0 || theAcct >= theUser.numAccounts()){
+                System.out.println("Invalid account. Please try again. ");
+            }
+        }while(theAcct < 0 || theAcct >= theUser.numAccounts());
+
+        theUser.printTransactionHistory();
+    }
 }

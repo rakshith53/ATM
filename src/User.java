@@ -57,4 +57,11 @@ public class User {
             System.out.printf("%d) %s\n", (i+1),this.accounts.get(i).getSummaryLine());
         }
     }
+    public int numAccounts(){
+        return accounts.size();
+    }
+
+    public void printTransactionHistory(int acctIndx){
+        this.accounts.get(acctIndx).printTransHistory();
+    }
 }

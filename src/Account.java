@@ -37,4 +37,12 @@ public class Account {
         for (Transaction t : this.transactions) balance += t.getAmount();
         return balance;
     }
+
+    public void printTransHistory() {
+        System.out.printf("Transaction History for account %s\n", this.uuid );
+        for(int t=this.transactions.size()-1;t>=0;t--){
+            System.out.printf(this.transactions.get(t).getSummaryLine());
+        }
+        System.out.println();
+    }
 }
