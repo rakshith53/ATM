@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673985370573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Creating Constructor">
+      <created>1674370455771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674370455771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
